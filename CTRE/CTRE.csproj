@@ -74,26 +74,49 @@
     <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="CANBusDevice.cs" />
-    <Compile Include="DriverModule.cs" />
-    <Compile Include="HERO.IO.cs" />
-    <Compile Include="LowLevel_Pcm.cs" />
-    <Compile Include="StatusCodes.cs" />
-    <Compile Include="UsbDeviceConnection.cs" />
-    <Compile Include="GamepadValues.cs" />
-    <Compile Include="ISingleGamepadValuesProvider.cs" />
-    <Compile Include="Reporting.cs" />
-    <Compile Include="Gamepad.cs" />
-    <Compile Include="PneumaticControlModule.cs" />
-    <Compile Include="PowerDistributionPanel.cs" />
+    <Compile Include="CTRE-SDK\CANBusDevice.cs" />
+    <Compile Include="CTRE-SDK\DriverModule.cs" />
+    <Compile Include="CTRE-SDK\HERO.IO.cs" />
+    <Compile Include="CTRE-SDK\LowLevel_Pcm.cs" />
+    <Compile Include="CTRE-SDK\StatusCodes.cs" />
+    <Compile Include="CTRE-SDK\UsbDeviceConnection.cs" />
+    <Compile Include="CTRE-SDK\GamepadValues.cs" />
+    <Compile Include="CTRE-SDK\ISingleGamepadValuesProvider.cs" />
+    <Compile Include="CTRE-SDK\Reporting.cs" />
+    <Compile Include="CTRE-SDK\Gamepad.cs" />
+    <Compile Include="CTRE-SDK\PneumaticControlModule.cs" />
+    <Compile Include="CTRE-SDK\PowerDistributionPanel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TalonSrx.cs" />
-    <Compile Include="LowLevel_TalonSrx.cs" />
-    <Compile Include="TrajectoryBuffer.cs" />
-    <Compile Include="UsbHostDevice.cs" />
-    <Compile Include="SafeOutputPort.cs" />
-    <Compile Include="Utilities.cs" />
-    <Compile Include="Watchdog.cs" />
+    <Compile Include="CTRE-SDK\TalonSrx.cs" />
+    <Compile Include="CTRE-SDK\LowLevel_TalonSrx.cs" />
+    <Compile Include="CTRE-SDK\TrajectoryBuffer.cs" />
+    <Compile Include="CTRE-SDK\UsbHostDevice.cs" />
+    <Compile Include="CTRE-SDK\SafeOutputPort.cs" />
+    <Compile Include="CTRE-SDK\Utilities.cs" />
+    <Compile Include="CTRE-SDK\Watchdog.cs" />
+    <Compile Include="ZSDK\CAN\TalonSRX\BrakeOverride.cs" />
+    <Compile Include="ZSDK\CAN\TalonSRX\LowLevel.cs" />
+    <Compile Include="ZSDK\CAN\TalonSRX\MotionProfile\SetValue.cs" />
+    <Compile Include="ZSDK\CAN\TalonSRX\MotionProfile\Status.cs" />
+    <Compile Include="ZSDK\CAN\TalonSRX\StatusFrameRate.cs" />
+    <Compile Include="ZSDK\CAN\TalonSRX\ControlMode.cs" />
+    <Compile Include="ZSDK\CAN\TalonSRX\Faults.cs" />
+    <Compile Include="ZSDK\CAN\TalonSRX\FeedbackDevice.cs" />
+    <Compile Include="ZSDK\CAN\TalonSRX\FeedbackDeviceStatus.cs" />
+    <Compile Include="ZSDK\CAN\TalonSRX\LimitMode.cs" />
+    <Compile Include="ZSDK\CAN\TalonSRX\LimitSwitchOverride.cs" />
+    <Compile Include="ZSDK\CAN\TalonSRX\MotionProfile\StatusBits.cs" />
+    <Compile Include="ZSDK\CAN\TalonSRX\NeutralMode.cs" />
+    <Compile Include="ZSDK\CAN\TalonSRX\TalonControlMode.cs" />
+    <Compile Include="ZSDK\CAN\TalonSRX\TalonSRX.cs" />
+    <Compile Include="ZSDK\CAN\TalonSRX\MotionProfile\TrajectoryPoint.cs" />
+    <Compile Include="ZSDK\HID\Gamepad.cs" />
+    <Compile Include="ZSDK\HID\GamepadValues.cs" />
+    <Compile Include="ZSDK\HID\IGamepadProvider.cs" />
+    <Compile Include="ZSDK\HID\UsbHostDevice.cs" />
+    <Compile Include="ZSDK\Utilities.cs" />
+    <Compile Include="ZSDK\HID\VendorSpec.cs" />
+    <Compile Include="ZSDK\Watchdog.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="ctre_netmf_native, Version=1.2.0.6, Culture=neutral, processorArchitecture=MSIL">
