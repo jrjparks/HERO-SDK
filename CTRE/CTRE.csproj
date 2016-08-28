@@ -94,27 +94,29 @@
     <Compile Include="CTRE-SDK\SafeOutputPort.cs" />
     <Compile Include="CTRE-SDK\Utilities.cs" />
     <Compile Include="CTRE-SDK\Watchdog.cs" />
-    <Compile Include="ZSDK\CAN\TalonSRX\BrakeOverride.cs" />
-    <Compile Include="ZSDK\CAN\TalonSRX\LowLevel.cs" />
+    <Compile Include="ZSDK\CAN\CANBusDevice.cs" />
+    <Compile Include="ZSDK\CAN\StatusCodes.cs" />
+    <Compile Include="ZSDK\CAN\TalonSRX\Config\BrakeOverride.cs" />
+    <Compile Include="ZSDK\CAN\TalonSRX\Driver\TalonSrxDriver.cs" />
     <Compile Include="ZSDK\CAN\TalonSRX\MotionProfile\SetValue.cs" />
     <Compile Include="ZSDK\CAN\TalonSRX\MotionProfile\Status.cs" />
-    <Compile Include="ZSDK\CAN\TalonSRX\StatusFrameRate.cs" />
-    <Compile Include="ZSDK\CAN\TalonSRX\ControlMode.cs" />
-    <Compile Include="ZSDK\CAN\TalonSRX\Faults.cs" />
-    <Compile Include="ZSDK\CAN\TalonSRX\FeedbackDevice.cs" />
-    <Compile Include="ZSDK\CAN\TalonSRX\FeedbackDeviceStatus.cs" />
-    <Compile Include="ZSDK\CAN\TalonSRX\LimitMode.cs" />
-    <Compile Include="ZSDK\CAN\TalonSRX\LimitSwitchOverride.cs" />
+    <Compile Include="ZSDK\CAN\TalonSRX\Config\StatusFrameRate.cs" />
+    <Compile Include="ZSDK\CAN\TalonSRX\Config\ControlMode.cs" />
+    <Compile Include="ZSDK\CAN\TalonSRX\Config\Faults.cs" />
+    <Compile Include="ZSDK\CAN\TalonSRX\Config\FeedbackDevice.cs" />
+    <Compile Include="ZSDK\CAN\TalonSRX\Config\FeedbackDeviceStatus.cs" />
+    <Compile Include="ZSDK\CAN\TalonSRX\Config\LimitMode.cs" />
+    <Compile Include="ZSDK\CAN\TalonSRX\Config\LimitSwitchOverride.cs" />
     <Compile Include="ZSDK\CAN\TalonSRX\MotionProfile\StatusBits.cs" />
-    <Compile Include="ZSDK\CAN\TalonSRX\NeutralMode.cs" />
-    <Compile Include="ZSDK\CAN\TalonSRX\TalonControlMode.cs" />
+    <Compile Include="ZSDK\CAN\TalonSRX\Config\NeutralMode.cs" />
+    <Compile Include="ZSDK\CAN\TalonSRX\Config\TalonControlMode.cs" />
     <Compile Include="ZSDK\CAN\TalonSRX\TalonSRX.cs" />
     <Compile Include="ZSDK\CAN\TalonSRX\MotionProfile\TrajectoryPoint.cs" />
     <Compile Include="ZSDK\HID\Gamepad.cs" />
     <Compile Include="ZSDK\HID\GamepadValues.cs" />
     <Compile Include="ZSDK\HID\IGamepadProvider.cs" />
     <Compile Include="ZSDK\HID\UsbHostDevice.cs" />
-    <Compile Include="ZSDK\Utilities.cs" />
+    <Compile Include="ZSDK\HID\Utilities.cs" />
     <Compile Include="ZSDK\HID\VendorSpec.cs" />
     <Compile Include="ZSDK\Watchdog.cs" />
   </ItemGroup>
@@ -126,6 +128,7 @@
     <Reference Include="Microsoft.SPOT.Hardware" />
     <Reference Include="Microsoft.SPOT.Native" />
   </ItemGroup>
+  <ItemGroup />
   <Import Condition="EXISTS('$(NetMfTargetsBaseDir)$(TargetFrameworkVersion)\CSharp.Targets')" Project="$(NetMfTargetsBaseDir)$(TargetFrameworkVersion)\CSharp.Targets" />
   <Import Condition="!EXISTS('$(NetMfTargetsBaseDir)$(TargetFrameworkVersion)\CSharp.Targets')" Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>

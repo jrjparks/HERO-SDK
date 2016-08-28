@@ -87,7 +87,7 @@ namespace CTRE.ZSDK.HID
                 Array.Copy(RawFloats, value.Axes, value.Axes.Length);
                 for (UInt16 bIdx = 0; bIdx < value.Buttons.Length; ++bIdx)
                     value.Buttons[bIdx] = (RawIntegers[0] >> bIdx & 1) == 1;
-                value.Pov = Utilities.PovAngleToGamepadPov(RawIntegers[1]);
+                value.Pov = HidUtilities.PovAngleToGamepadPov(RawIntegers[1]);
 
                 value.VID = (UInt32)RawIntegers[6];
                 value.PID = (UInt32)RawIntegers[7];

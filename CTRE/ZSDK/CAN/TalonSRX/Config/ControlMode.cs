@@ -1,14 +1,11 @@
-using System;
-using Microsoft.SPOT;
-
-namespace CTRE.ZSDK.CAN.TalonSRX
+namespace CTRE.ZSDK.CAN.TalonSRX.Config
 {
     public enum ControlMode
     {
         PercentVbus = 0,
-        Current = 1,
+        Position = 1,
         Speed = 2,
-        Position = 3,
+        Current = 3,
         Voltage = 4,
         Follower = 5,
         MotionProfile = 6,

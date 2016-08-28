@@ -1,8 +1,8 @@
 using System;
 
-namespace CTRE.ZSDK
+namespace CTRE.ZSDK.HID
 {
-    public static class Utilities
+    public static class HidUtilities
     {
         /// <summary>
         /// Deadband a Single(float) value to 0.

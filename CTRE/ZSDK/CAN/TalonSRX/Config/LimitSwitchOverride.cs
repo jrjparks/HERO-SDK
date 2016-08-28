@@ -1,4 +1,4 @@
-namespace CTRE.ZSDK.CAN.TalonSRX
+namespace CTRE.ZSDK.CAN.TalonSRX.Config
 {
     public enum LimitSwitchOverride
     {
